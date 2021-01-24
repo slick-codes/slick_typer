@@ -1,6 +1,14 @@
 # slick_typer
  typing web application
 
+
+Link: 
+https://slicktyper.netlify.app/
+
+Githubpage:
+Link https://mcgentle.github.io/slick_typer/
+
+
 typing web application for those who already knows how to type 
 it is intended to help you master the act of typing 
 
