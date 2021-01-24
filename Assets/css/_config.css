@@ -1,0 +1,33 @@
+*{
+    margin:0;
+    padding:0;
+    outline:none;
+    list-style:none;
+}
+body{
+    overflow-x: hidden;
+    user-select: none;
+}
+
+
+@font-face {font-family: "GeosansLight"; src: url("//db.onlinewebfonts.com/t/228984258eaa17737d6d3fdcc03f6f1f.eot"); src: url("//db.onlinewebfonts.com/t/228984258eaa17737d6d3fdcc03f6f1f.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/228984258eaa17737d6d3fdcc03f6f1f.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/228984258eaa17737d6d3fdcc03f6f1f.woff") format("woff"), url("//db.onlinewebfonts.com/t/228984258eaa17737d6d3fdcc03f6f1f.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/228984258eaa17737d6d3fdcc03f6f1f.svg#GeosansLight") format("svg"); }
+
+
+:root{
+    --black:#333333;
+    --green:#11F59A;
+    --white:white;
+    --darkgreen:#0B8C62;
+    --main-font:geosanslight;
+    --secondary-font:Century Gothic;
+}
+
+
+/*:root{
+    --black:#f0f0f0;
+    --green:#14af71;
+    --white:#000000;
+    --darkgreen:#0a6044;
+    --main-font:geosanslight;
+    --secondary-font:Century Gothic;
+}*/

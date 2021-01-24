@@ -1,0 +1,192 @@
+.game-setting{
+    width:100%;
+    height:inherit;
+    position:absolute;
+    top:0;
+    z-index: 1;
+    flex-flow:column;
+    justify-content: center;
+    align-items: center;
+    background:var(--black);
+    opacity:0;
+    pointer-events: none;
+    transition:opacity 0.5s;
+    display:flex;
+    will-change: opacity;
+    
+}
+.game-setting > div{
+    display:flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+.game-setting.active{
+    opacity:1;
+    pointer-events: auto;
+}
+.game-setting button.back-home{
+    position:absolute;
+    top:0;
+    left:0;
+    padding: 0.5em 0.7em;
+    font-size:20px;
+    background:transparent;
+    color:var(--white);
+    border: none;
+}
+
+.game-setting h1{
+    font-size:15px;
+    color:var(--white);
+    font-family:var(--main-font);
+    font-weight:normal;
+    text-transform: uppercase;
+    letter-spacing:1vw;
+    padding:1em 0;
+}
+.setting-area{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-flow:column;
+    
+}
+.setting-area ul{
+    display:flex;
+    color:var(--white);
+    padding:0.5em 1em;
+    width:13em;
+    font-family: var(--main-font);
+}
+.setting-area li{
+}
+.setting-area li:nth-child(2){
+    margin-left:auto;
+}
+
+.setting-area .toggle-body{
+    width:2em;
+    height:1em;
+    background:#717171;
+    border-radius:53em;
+    cursor:pointer;
+    transition-property:all;
+    transition-duration:0.5s;
+    position:relative;
+    will-change: color;
+}
+.toggle-body .toggle{
+    width:1em;
+    height:1em;
+    background:#fdfdfd;
+    border-radius:100%;
+    position:absolute;
+    transition:transform 0.5s;
+    pointer-events: none;
+}
+.toggle-body.active{
+    background:rgba(183, 230, 183, 0.69);
+}
+.toggle-body.active  .toggle{
+    background-color:#91ff93;
+    transform: translateX(1em);
+    will-change: transform;
+}
+.setting-area li{
+    display: flex;
+    justify-content: center;
+    width:100%;
+    align-items: center;
+}
+@media (max-width:600px){
+    .setting-area .toggle-body{
+        width:3em;
+        height:1.5em ;
+        display:flex;
+    }
+    .toggle-body .toggle{
+        height:1.5em;
+        width:1.5em;
+    }
+    .toggle-body.active .toggle{
+        transform: translateX(1.5em);
+    }
+    .game-setting > div{
+        margin-top:-7em;
+        width:80%;
+        padding:1em;
+    }
+.game-setting .setting-area{
+    position:relative;
+    width:100%;
+    padding:1em;
+    
+}
+.setting-area ul{
+    width:100%;
+}
+    .setting-area ul li:last-child{
+        width:100%;
+        margin-left:auto;
+        display:flex;
+        justify-content: flex-end;
+    }
+    .setting-area ul li:first-child{
+        justify-content: flex-start;
+    }
+    
+    
+    .setting-area ul li input{
+    padding:1.3em 0;
+    }
+    .setting-area ul li button{
+        padding:1.4em 1.5em;
+    }
+
+}
+.setting-area ul:nth-child(2){
+    display:block;
+    padding-bottom:0;
+}
+.setting-area .log-area{
+    display:block;
+    padding-left:1em;
+    transform: translateY(-0.8em);
+}
+.setting-area  .log-area.err{
+    color:#f29393;
+    font-family: arial;
+    font-size:13px;
+    font-style: oblique;
+}
+
+.setting-area ul .log-area.added{
+    color:var(--green);
+    font-family: arial;
+    font-size:13px;
+    font-style: oblique;
+}
+.setting-area li button{
+    padding:0.67em;
+    border:none;
+}
+.setting-area li input{
+    width:100%;
+    text-indent: 1em;
+    padding:0.6em 0;
+    border:none;
+}
+
+.setting-area select{
+    padding:0.5em;
+}
+
+.setting-area ul:last-child li button{
+    font-size:11px;
+    padding:0.5em 0.6em;
+    background:var(--white);
+    color:var(--black);
+    border:none;
+    border-radius:0.3em;
+}

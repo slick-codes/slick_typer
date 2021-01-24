@@ -1,0 +1,215 @@
+body{
+    background:var(--black);
+}
+
+.game-body {
+    width: 57vw;
+    height: 25em;
+    border-radius: 0.3em;
+    box-shadow: 1px 2px 3px 5px rgba(0, 0, 0, 0.05);
+    position:relative;
+    overflow:;
+    z-index: 1;
+}
+
+@media (max-width:600px) {
+    .game-body {
+        width:100%;
+        height:inherit;
+    }
+}
+
+#game {
+    width: 100%;
+    height: inherit;
+    position: absolute;
+    top:0;
+    
+}
+#game.fade{
+    filter: grayscale(43) blur(0.8px);
+}
+
+
+#game nav {
+    width: 100%;
+    display: flex;
+    padding: 1.4em 0;
+    background:--(black);
+    position:sticky;
+    top:0;
+}
+
+#game nav ul {
+    width: 100%;
+    text-align: center;
+    color: var(--white);
+    font-family: arial;
+}
+
+#game nav ul li span {
+    font-size: 20px;
+    color: var(--green);
+    padding:0;
+}
+
+#game nav ul:nth-child(2) li {
+    color: gray;
+    font-family: var(--main-font);
+}
+
+/*Word Section */
+.word-section {
+    padding: 0.4em 0;
+}
+
+.word-section h1 {
+    font-size: 15px;
+    font-weight: normal;
+    font-family: var(--main-font);
+    color: var(--white);
+    text-align: center;
+}
+
+.word-section .word {
+    font-size: 3em;
+    font-family: arial;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--green);
+    //text-shadow: 3px 2px var(--white);
+    opacity: 1;
+}
+
+.word-section .word span{
+    animation-delay:0;
+    animation-name:fade-in;
+    animation-direction:alternate;
+    animation-duration:0.3s;
+    will-change: transform;
+    animation-timing-function: linear;
+}
+
+@keyframes fade-in{
+    form{
+        transform:rotate(0deg);
+        opacity:0;
+    }to{
+        transform:rotate(360deg);
+        opacity:1;
+    }
+}
+
+
+.word-section .word span.--modifier{
+    color:var(--white);
+    animation-timing-function: ease !important;
+    animation-duration: 1s;
+    animation-delay:0s;
+    animation-name:flyOut;
+    animation-fill-mode: both;
+    animation-direction: alternate;
+    will-change: transform opacity;
+}
+
+@keyframes flyOut{
+    from{
+        transform:translate(0px , 0px) rotate(0);
+        opacity:1;
+    }to{
+        transform: translate(-2em, -5em) rotate(360deg);;
+            opacity:0;
+    }
+}
+
+
+.word-section h2 {
+    font-size: 15px;
+    text-align: center;
+    color: var(--white);
+    padding: 1.6em 0;
+    font-family: var(--main-font);
+    font-weight: normal;
+    text-transform:capitalize;
+}
+
+
+/*Input Word Section*/
+.input-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.6em 0;
+    padding-top: 0;
+}
+
+.input-section input {
+    width: 60%;
+    font-size: 19px;
+    padding: 12px 1em;
+    font-family: var(--secondary-font);
+    border-radius: 0.2em;
+    border: none;
+    background: transparent;
+    color: var(--white);
+    border:solid 1px var(--white);
+    text-align: center;
+}
+
+.input-section::placeholder{
+    color:var(--white);
+}
+
+@media (max-width:600px) {
+    .word-section {
+        padding: 5vh 0;
+    }
+
+    .word-section .word {
+        font-size: 40px;
+        padding: 3vh 0;
+    }
+
+    .input-section {
+        padding: 3.5vh 0;
+    }
+
+    .input-section input {
+        padding: 3vh 1em;
+    }
+}
+/*Back To Menu Button*/
+.back-to-menu-body{
+    width:100%;
+    display:flex;
+    flex-flow:column;
+    justify-content: center;
+    align-items: center;
+    padding:0.5em 0;
+}
+.back-to-menu-body button{
+    padding:0.7em ;
+    border:none;
+    background:var(--white);
+    color:var(--black);
+    font-size:10px;
+    border-radius:0.2em;
+}
+.back-to-menu-body button:active{
+    background:var(--white);
+    color:black;
+}
+
+/* Footer Section copywrite*/
+footer {
+    text-align: center;
+    font-family: var(--secondary-font);
+    color: var(--white);
+    font-size: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 2em 0;
+}

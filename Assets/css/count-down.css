@@ -1,0 +1,26 @@
+#count-down{
+    width: 100%;
+    height:inherit;
+    position: absolute;
+    top: 0;
+    background:var(--black);
+    display:none;
+    justify-content: center;
+    align-items: center;
+    color:var(--white);
+}
+#count-down span{
+    font-size:60px;
+    font-family:arial;
+    animation-duration:0.8s;
+    animation-name:scale-in;
+    transform:scale(1);
+    will-change: transform;
+}
+@keyframes scale-in{
+    from{
+        transform:scale(5)
+    }to{
+        transform: scale(1)
+    }
+}

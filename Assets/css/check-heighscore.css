@@ -1,0 +1,70 @@
+.check-highscore{
+    width:100%;
+    height:inherit;
+    background:var(--black);
+    position: absolute;
+    display:flex;
+    flex-flow:column;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    z-index: 1;
+    opacity:0;
+    pointer-events: none;
+    will-change: transform opacity;
+    transform:skewX(0)
+}
+.check-highscore.active{
+    opacity:1;
+    pointer-events: auto;
+    transform:skewX(0deg);
+    animation-name:skew;
+    animation-duration:0.6s;
+}
+
+
+.check-highscore h1{
+    text-align: center;
+    font-family:var(--main-font);
+    text-transform: uppercase;
+    font-size:15px;
+    padding:1em 0;
+    letter-spacing:0.4em;
+    color:var(--white);
+}
+.check-highscore .highscore{
+    width:100%;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    display:flex;
+    padding:1em 0;
+}
+.check-highscore .highscore span{
+    font-size:4em;
+    color:var(--white);
+    font-family:var(--main-font);
+    font-weight: 600;
+}
+.check-highscore .social-handle{
+    font-size:15px;
+    width:100%;
+    display:flex;
+    justify-content: center;
+    color:var(--white);
+    font-family: Century Gothic;
+}
+
+.check-highscore .button{
+    width:100%;
+    justify-content: center;
+    display:flex;
+    padding:1em 0;
+}
+.check-highscore .button button{
+    padding:0.5em 1em;
+    border:none;
+    border-radius:0.2em;
+    background:transparent;
+    color:var(--white);
+}

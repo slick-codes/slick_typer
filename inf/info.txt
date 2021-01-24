@@ -1,0 +1,5 @@
+
+
+dark:  $333333
+lightgreen: #11F59A
+darkgreen: #0B9C62

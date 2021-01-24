@@ -1,0 +1,17 @@
+@keyframes skew{
+    from{
+        transform:skewX(17deg);
+        opacity:0;
+    }to{
+        transform:skewX(0deg);
+        opacity:1;
+    }
+}
+
+@keyframes grow{
+    from{
+        transform:rotate(-2deg);
+    }to{
+        transform:rotate(2deg);
+    }
+}

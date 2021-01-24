@@ -1,0 +1,84 @@
+#game-over{
+    width:100%;
+    height:inherit;
+    top:0;
+    background:var(--black);
+    position:absolute;
+    opacity:0;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    will-change:transform opacity;
+    pointer-events:none;
+    
+}
+
+
+#game-over.active{
+    opacity:1;
+    animation-name:skew;
+    animation-duration:0.7s;
+    pointer-events:auto;
+}
+
+#game-over h1{
+    text-align:center;
+    color:var(--white);
+    font-family:var(--main-font);
+    font-weight:normal;
+    font-size:25px;
+    padding:0.2em 0;
+}
+
+#game-over h2{
+    text-align:center;
+    color:var(--white);
+    font-family:var(--main-font);
+    font-weight:normal;
+}
+
+#game-over .finalScore{
+    width:100%;
+    padding:1em 0;
+    padding-top:0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.finalScore span{
+    padding:0em 0;
+    font-size:6em;
+    color:var(--green);
+    font-weight:bolder;
+    font-family:century Gothic;
+}
+#game-over .current-winner h1{
+    padding:0;
+    font-size:16px;
+    padding-bottom:0.3em;
+}
+#game-over .current-winner  h1 span{
+    color:var(--green) ;
+    font-weight:bolder;
+    font-family:arial;
+}
+#game-over .current-winner h2{
+    font-family:var(--secondary-font);
+    font-weight:normal;
+    padding:0;
+    font-size:13px;
+}
+#game-over .buttons{
+    display:flex;
+    width:100%;
+    height:5em;
+    justify-content: center;
+    align-items: center;
+    padding-right:0.4em;
+}
+#game-over .buttons button{
+    padding:0.5em  1em;
+    border:none;
+    background-color:transparent;
+    color:var(--white);
+}
